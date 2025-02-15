@@ -1,0 +1,14 @@
+{
+  "id": "CelesteResourcePack",
+  "name": "Celeste Resource Pack",
+  "display_name": "CTP",
+  "author": ["jessbian", "lazulyra"],
+  "description": "Celeste themed Balatro resource pack",
+  "prefix": "celeste_tex",
+  "main_file": "main.lua",
+  "priority": 0,
+  "badge_colour": "5BCEFA",
+  "badge_text_colour": "F5A9B8",
+  "version": "0.0.1~1",
+  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)", "Balatro (>=1.0.1m)"]
+}
