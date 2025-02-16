@@ -13,3 +13,4 @@ SMODS.Atlas { key = "Joker", path = "Jokers-celeste.png", px = 71, py = 95, pref
 SMODS.Atlas { key = "Tarot", path = "Consumable-celeste.png", px = 71, py = 95, prefix_config = {key = false} }
 SMODS.Atlas { key = "Spectral", path = "Consumable-celeste.png", px = 71, py = 95, prefix_config = {key = false} }
 SMODS.Atlas { key = "Planet", path = "Consumable-celeste.png", px = 71, py = 95, prefix_config = {key = false} }
+SMODS.Atlas { key = "centers", path = "Enhancers-celeste.png", px = 71, py = 95, prefix_config = {key = false} }
