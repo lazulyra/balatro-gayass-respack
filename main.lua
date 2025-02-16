@@ -1,8 +1,8 @@
 SMODS.Language { key = "en-us", label = "English", font = {
     file = "Renogare-Regular.ttf",
-    render_scale = G.TILESIZE * 7,
+    render_scale = G.TILESIZE * 6.5,
     TEXT_HEIGHT_SCALE = 0.83,
-    TEXT_OFFSET = { x = 10, y = -20 },
+    TEXT_OFFSET = { x = 10, y = -13 },
     FONTSCALE = 0.1,
     squish = 1,
     DESCSCALE = 1
