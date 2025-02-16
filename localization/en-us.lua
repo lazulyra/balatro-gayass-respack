@@ -126,15 +126,15 @@ return {
                     "{C:red}#2#{} every round",
                 },
             },
-            j_joker={
-                name="Bald Joker",
-                text={
+            j_joker = {
+                name = "Bald Joker",
+                text = {
                     "{C:red,s:1.1}+#1#{} Mult",
                 },
             },
-            j_shortcut={
-                name="Demo Dash",
-                text={
+            j_shortcut = {
+                name = "Demo Dash",
+                text = {
                     "Allows {C:attention}Straights{} to be",
                     "made with gaps of {C:attention}1 rank",
                     "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
@@ -203,17 +203,17 @@ return {
                     "{C:inactive}(Must have room)",
                 },
             },
-            c_cryptid={
-                name="Chiara",
-                text={
+            c_cryptid = {
+                name = "Chiara",
+                text = {
                     "Create {C:attention}#1#{} copies of",
                     "{C:attention}1{} selected card",
                     "in your hand",
                 },
             },
-            c_medium={
-                name="Large",
-                text={
+            c_medium = {
+                name = "Large",
+                text = {
                     "Add a {C:purple}Purple Seal{}",
                     "to {C:attention}1{} selected",
                     "card in your hand",
@@ -230,6 +230,12 @@ return {
                     "to a random {C:attention}Joker",
                 },
             },
+        },
+    },
+    misc = {
+        dictionary = {
+            k_again_ex="Once more!",
+            k_nope_ex = "Aw, dang it!",
         },
     }
 }
