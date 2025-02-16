@@ -211,6 +211,14 @@ return {
                     "in your hand",
                 },
             },
+            c_medium={
+                name="Large",
+                text={
+                    "Add a {C:purple}Purple Seal{}",
+                    "to {C:attention}1{} selected",
+                    "card in your hand",
+                },
+            },
         },
         Tarot = {
             c_wheel_of_fortune = {
