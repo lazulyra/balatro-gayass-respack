@@ -126,6 +126,12 @@ return {
                     "{C:red}#2#{} every round",
                 },
             },
+            j_joker={
+                name="Bald Joker",
+                text={
+                    "{C:red,s:1.1}+#1#{} Mult",
+                },
+            },
         },
         Planet = {
             c_uranus = {
