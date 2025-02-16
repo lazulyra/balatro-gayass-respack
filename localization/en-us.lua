@@ -140,6 +140,19 @@ return {
                     "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
                 },
             },
+            j_wee={
+                name="Tiny Bald Joker",
+                text={
+                    "This Joker gains",
+                    "{C:chips}+#2#{} Chips when each",
+                    "played {C:attention}2{} is scored",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                },
+                unlock={
+                    "Win a run in {E:1,C:attention}#1#",
+                    "or fewer rounds",
+                },
+            },
         },
         Planet = {
             c_uranus = {
