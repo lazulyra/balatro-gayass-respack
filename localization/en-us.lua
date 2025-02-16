@@ -132,6 +132,14 @@ return {
                     "{C:red,s:1.1}+#1#{} Mult",
                 },
             },
+            j_shortcut={
+                name="Demo Dash",
+                text={
+                    "Allows {C:attention}Straights{} to be",
+                    "made with gaps of {C:attention}1 rank",
+                    "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
+                },
+            },
         },
         Planet = {
             c_uranus = {
@@ -193,6 +201,14 @@ return {
                     "Creates a",
                     "{C:legendary,E:1}Legendary{} Joker",
                     "{C:inactive}(Must have room)",
+                },
+            },
+            c_cryptid={
+                name="Chiara",
+                text={
+                    "Create {C:attention}#1#{} copies of",
+                    "{C:attention}1{} selected card",
+                    "in your hand",
                 },
             },
         },
