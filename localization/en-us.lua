@@ -263,7 +263,7 @@ return {
             },
             lq_11={
                 "RNG diff",
-            }
+            },
             lq_2={
                 "Going to go",
                 "play Tetr.io",
