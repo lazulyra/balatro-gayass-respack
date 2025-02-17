@@ -261,6 +261,9 @@ return {
                 "won if I",
                 "was playing tbh",
             },
+            lq_11={
+                "RNG diff",
+            }
             lq_2={
                 "Going to go",
                 "play Tetr.io",
@@ -308,7 +311,9 @@ return {
                 "fin-tastic!",
             },
             wq_3={
-                "RNG diff",
+                "It's hard to",
+                "believe that it's",
+                "over, isn't it?",
             },
             wq_4={
                 "You're",
@@ -330,11 +335,6 @@ return {
                 "You're welcome",
                 "for the carry :3",
             },
-            wq_9={
-                "It's hard to",
-                "believe that it's",
-                "over, isn't it?",
-            }
         }
     }
 }
