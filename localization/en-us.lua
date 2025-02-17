@@ -250,5 +250,91 @@ return {
             k_again_ex="Once more!",
             k_nope_ex = "Aw, dang it!",
         },
+        quips={
+            lq_1={
+                "You need to",
+                "increase your",
+                "luck stat.",
+            },
+            lq_10={
+                "I would have",
+                "won if I",
+                "was playing tbh",
+            },
+            lq_2={
+                "Going to go",
+                "play Tetr.io",
+                "instead"
+            },
+            lq_3={
+                "What the",
+                "fuck???",
+            },
+            lq_4={
+                "Can't believe",
+                "the game hates",
+                "you :(",
+            },
+            lq_5={
+                "Maybe play a",
+                "non-flush hand",
+                "for once...",
+            },
+            lq_6={
+                "The real way",
+                "to win is to",
+                "not lose.",
+            },
+            lq_7={
+                "Wow, that seed",
+                "sucked!"
+            },
+            lq_8={
+                "The more you die,",
+                "the more you're",
+                "learning. Keep",
+                "going!"
+            },
+            lq_9={
+                "I'm literally",
+                "a fool, what's",
+                "your excuse?",
+            },
+            wq_1={
+                "GG EZ",
+            },
+            wq_2={
+                "You're pretty",
+                "fin-tastic!",
+            },
+            wq_3={
+                "RNG diff",
+            },
+            wq_4={
+                "You're",
+                "winner!",
+            },
+            wq_5={
+                "I like this player.",
+                "It played well.",
+                "It did not give up.",
+            },
+            wq_6={
+                "Swaos",
+            },
+            wq_7={
+                "I LOVE",
+                "GAMBLING!",
+            },
+            wq_8={
+                "You're welcome",
+                "for the carry :3",
+            },
+            wq_9={
+                "It's hard to",
+                "believe that it's",
+                "over, isn't it?",
+            }
+        }
     }
 }
