@@ -263,6 +263,24 @@ return {
                 },
             },
         },
+        Voucher={
+            v_paint_brush={
+                name="Mushroom",
+                text={
+                    "{C:attention}+#1#{} hand size",
+                },
+            },
+            v_palette={
+                name="Mega Mushroom",
+                text={
+                    "{C:attention}+#1#{} hand size",
+                },
+                unlock={
+                    "Reduce hand size",
+                    "down to {C:attention}#1#{} cards",
+                },
+            },
+        },
     },
     misc = {
         dictionary = {
