@@ -14,4 +14,4 @@ SMODS.Atlas { key = "Tarot", path = "Consumable-celeste.png", px = 71, py = 95, 
 SMODS.Atlas { key = "Spectral", path = "Consumable-celeste.png", px = 71, py = 95, prefix_config = { key = false } }
 SMODS.Atlas { key = "Planet", path = "Consumable-celeste.png", px = 71, py = 95, prefix_config = { key = false } }
 SMODS.Atlas { key = "Centers", path = "Enhancers-celeste.png", px = 71, py = 95, prefix_config = { key = false } }
-SMODS.Atlas { key = "Vouchers", path = "Vouchers-celeste.png", px = 71, py = 95, prefix_config = { key = false } }
+SMODS.Atlas { key = "Voucher", path = "Vouchers-celeste.png", px = 71, py = 95, prefix_config = { key = false } }
