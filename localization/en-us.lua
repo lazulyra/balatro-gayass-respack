@@ -13,7 +13,7 @@ return {
                 name = "Loss",
                 text = {
                     "All {C:attention}Flushes{} and",
-                    "{C:attention}Straights{} can be",
+                    "{C:attention}Gays{} can be",
                     "made with {C:attention}4{} cards",
                 },
             },
@@ -135,9 +135,18 @@ return {
             j_shortcut = {
                 name = "Demo Dash",
                 text = {
-                    "Allows {C:attention}Straights{} to be",
+                    "Allows {C:attention}Gays{} to be",
                     "made with gaps of {C:attention}1 rank",
                     "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
+                },
+            },
+             j_superposition={
+                 name="Superposition",
+                 text={
+                      "Create a {C:tarot}Tarot{} card if",
+                        "poker hand contains an",
+                     "{C:attention}Ace{} and a {C:attention}Gay{}",
+                     "{C:inactive}(Must have room)",
                 },
             },
             j_wee={
@@ -152,7 +161,9 @@ return {
                     "Win a run in {E:1,C:attention}#1#",
                     "or fewer rounds",
                 },
+            
             },
+            
         },
         Planet = {
             c_uranus = {
