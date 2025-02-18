@@ -163,7 +163,15 @@ return {
                 },
             
             },
-            
+            j_runner={
+                    name="Runner",
+                    text={
+                        "Gains {C:chips}+#2#{} Chips",
+                        "if played hand",
+                        "contains a {C:attention}Gay{}",
+                        "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
+                    },
+                },
         },
         Planet = {
             c_uranus = {
