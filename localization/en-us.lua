@@ -251,6 +251,73 @@ return {
                     "card in your hand",
                 },
             },
+            c_immolate={
+                name="Maddie",
+                text={
+                    "Destroys {C:attention}#1#{} random",
+                    "cards in hand,",
+                    "gain {C:money}$#2#",
+                },
+            },
+            c_wraith={
+                name="Ari",
+                text={
+                    "Creates a random",
+                    "{C:red}Rare{C:attention} Joker{},",
+                    "sets money to {C:money}$0",
+                },
+            },
+            c_hex={
+                name="Jess",
+                text={
+                    "Add {C:dark_edition}Polychrome{} to a",
+                    "random {C:attention}Joker{}, destroy",
+                    "all other Jokers",
+                },
+            },
+            c_trance={
+                name="Ants",
+                text={
+                    "Add a {C:blue}Blue Seal{}",
+                    "to {C:attention}1{} selected",
+                    "card in your hand",
+                },
+            },
+            c_incantation={
+                name="OverSky",
+                text={
+                    "Destroy {C:attention}1{} random",
+                    "card in your hand, add {C:attention}#1#",
+                    "random {C:attention}Enhanced numbered",
+                    "{C:attention}cards{} to your hand",
+                },
+            },
+            c_familiar={
+                name="Panda",
+                text={
+                    "Destroy {C:attention}1{} random",
+                    "card in your hand, add",
+                    "{C:attention}#1#{} random {C:attention}Enhanced face",
+                    "{C:attention}cards{} to your hand",
+                },
+            },
+            c_sigil={
+                name="Mio",
+                text={
+                    "Converts all cards",
+                    "in hand to a single",
+                    "random {C:attention}suit",
+                },
+            },
+            c_grim={
+                name="Ruri",
+                text={
+                    "Destroy {C:attention}1{} random",
+                    "card in your hand,",
+                    "add {C:attention}#1#{} random {C:attention}Enhanced",
+                    "{C:attention}Aces{} to your hand",
+                },
+            },
         },
         Tarot = {
             c_wheel_of_fortune = {
