@@ -288,19 +288,8 @@ return {
             k_nope_ex = "Aw, dang it!",
         },
         poker_hands={
-            ["Five of a Kind"]="Five of a Kind",
-            Flush="Flush",
-            ["Flush Five"]="Flush Five",
-            ["Flush House"]="Flush House",
-            ["Four of a Kind"]="Four of a Kind",
-            ["Full House"]="Full House",
-            ["High Card"]="High Card",
-            Pair="Pair",
-            ["Royal Flush"]="Royal Flush",
             Straight="Gay",
             ["Straight Flush"]="Gay Flush",
-            ["Three of a Kind"]="Three of a Kind",
-            ["Two Pair"]="Two Pair",
         },
         quips={
             lq_1={
