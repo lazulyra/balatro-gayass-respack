@@ -1,5 +1,17 @@
 return {
     descriptions = {
+        Back={
+            b_ghost={
+                name="Oomfie Deck",
+                text={
+                    "{C:spectral}Spectral{} cards may",
+                    "appear in the shop,",
+                    "start with a {C:spectral,T:c_hex}Jess{} card",
+                    " ",
+                    "{C:tarot}My friends are here!{}",
+                },
+            },
+        },
         Joker = {
             j_dusk = {
                 name = "Golden Ridge",
