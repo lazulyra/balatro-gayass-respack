@@ -184,6 +184,18 @@ return {
                         "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
                     },
                 },
+                j_caino={
+                    name="Big Chungus",
+                    text={
+                        "This Joker gains {X:mult,C:white} X#1# {} Mult",
+                        "when a {C:attention}face{} card",
+                        "is destroyed",
+                        "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                    },
+                    unlock={
+                        "{E:1,s:1.3}?????",
+                    },
+                },
         },
         Planet = {
             c_uranus = {
