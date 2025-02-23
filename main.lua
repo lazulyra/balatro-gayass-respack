@@ -25,8 +25,8 @@ music3: planet booster theme
 music4: shop music
 music5: boss music
 --]]
-SMODS.Sound { key = "music1", path = "music1.ogg", prefix_config = false }
+-- SMODS.Sound { key = "music1", path = "music1.ogg", prefix_config = false }
 
 -- Sounds
-SMODS.Sound { key = "chips1", path = "chips1.ogg", prefix_config = false }
+-- SMODS.Sound { key = "chips1", path = "chips1.ogg", prefix_config = false }
 
