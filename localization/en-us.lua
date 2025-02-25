@@ -173,7 +173,6 @@ return {
                     "Win a run in {E:1,C:attention}#1#",
                     "or fewer rounds",
                 },
-            
             },
             j_runner={
                     name="Runner",
@@ -184,16 +183,33 @@ return {
                         "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
                     },
                 },
-                j_caino={
+            j_caino={
                     name="Big Chungus",
                     text={
-                        "This Joker gains {X:mult,C:white} X#1# {} Mult",
-                        "when a {C:attention}face{} card",
-                        "is destroyed",
-                        "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                       "This Joker gains {X:mult,C:white} X#1# {} Mult",
+                       "when a {C:attention}face{} card",
+                       "is destroyed",
+                       "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
                     },
                     unlock={
                         "{E:1,s:1.3}?????",
+                    },
+                },
+            j_mr_bones={
+                    name="Sans",
+                    text={
+                        "Prevents Death",
+                        "if chips scored",
+                        "are at least {C:attention}25%",
+                        "of required chips",
+                        "{S:1.1,C:red,E:2}self destructs{}",
+                        " ",
+                        "{C:blue,E:1.1}\"You're gunna have{}", 
+                        "{C:blue,E:1.1}a bad time.\"{}",
+                    },
+                    unlock={
+                        "Lose {C:attention,E:1}#1#{} runs",
+                        "{C:inactive}(#2#)",
                     },
                 },
         },
@@ -351,6 +367,14 @@ return {
                     "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, or",
                     "{C:dark_edition}Polychrome{} edition",
                     "to a random {C:attention}Joker",
+                },
+            },
+            c_tower={
+                name="The Misdrop",
+                text={
+                    "Enhances {C:attention}#1#{} selected",
+                    "card into a",
+                    "{C:attention}#2#",
                 },
             },
         },
