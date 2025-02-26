@@ -1,9 +1,9 @@
 return {
     descriptions = {
-        Back={
-            b_ghost={
-                name="Oomfie Deck",
-                text={
+        Back = {
+            b_ghost = {
+                name = "Oomfie Deck",
+                text = {
                     "{C:spectral}Spectral{} cards may",
                     "appear in the shop,",
                     "start with a {C:spectral,T:c_hex}Jess{} card",
@@ -153,8 +153,8 @@ return {
                 },
             },
              j_superposition={
-                 name="Superposition",
-                 text={
+                name = "Superposition",
+                text = {
                       "Create a {C:tarot}Tarot{} card if",
                         "poker hand contains an",
                      "{C:attention}Ace{} and a {C:attention}Gay{}",
@@ -162,56 +162,68 @@ return {
                 },
             },
             j_wee={
-                name="Tiny Bald Joker",
-                text={
+                name = "Tiny Bald Joker",
+                text = {
                     "This Joker gains",
                     "{C:chips}+#2#{} Chips when each",
                     "played {C:attention}2{} is scored",
                     "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
                 },
-                unlock={
+                unlock = {
                     "Win a run in {E:1,C:attention}#1#",
                     "or fewer rounds",
                 },
             },
-            j_runner={
-                    name="Runner",
-                    text={
-                        "Gains {C:chips}+#2#{} Chips",
-                        "if played hand",
-                        "contains a {C:attention}Gay{}",
-                        "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
-                    },
+            j_runner = {
+                name = "Runner",
+                text = {
+                    "Gains {C:chips}+#2#{} Chips",
+                    "if played hand",
+                    "contains a {C:attention}Gay{}",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
                 },
-            j_caino={
-                    name="Big Chungus",
-                    text={
-                       "This Joker gains {X:mult,C:white} X#1# {} Mult",
-                       "when a {C:attention}face{} card",
-                       "is destroyed",
-                       "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
-                    },
-                    unlock={
-                        "{E:1,s:1.3}?????",
-                    },
+            },
+            j_caino = {
+                name = "Big Chungus",
+                text = {
+                    "This Joker gains {X:mult,C:white} X#1# {} Mult",
+                    "when a {C:attention}face{} card",
+                    "is destroyed",
+                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
                 },
-            j_mr_bones={
-                    name="Sans",
-                    text={
-                        "Prevents Death",
-                        "if chips scored",
-                        "are at least {C:attention}25%",
-                        "of required chips",
-                        "{S:1.1,C:red,E:2}self destructs{}",
-                        " ",
-                        "{C:blue,E:1.1}\"You're gunna have{}", 
-                        "{C:blue,E:1.1}a bad time.\"{}",
-                    },
-                    unlock={
-                        "Lose {C:attention,E:1}#1#{} runs",
-                        "{C:inactive}(#2#)",
-                    },
+                unlock = {
+                    "{E:1,s:1.3}?????",
                 },
+            },
+            j_mr_bones = {
+                name = "Sans",
+                text = {
+                    "Prevents Death",
+                    "if chips scored",
+                    "are at least {C:attention}25%",
+                    "of required chips",
+                    "{S:1.1,C:red,E:2}self destructs{}",
+                    " ",
+                    "{C:blue,E:1.1}\"You're gunna have{}", 
+                    "{C:blue,E:1.1}a bad time.\"{}",
+                },
+                unlock = {
+                    "Lose {C:attention,E:1}#1#{} runs",
+                    "{C:inactive}(#2#)",
+                },
+            },
+            j_throwback = {
+                name = "Yippee",
+                text = {
+                    "{X:mult,C:white} X#1# {} Mult for each",
+                    "{C:attention}Blind{} skipped this run",
+                    "{C:inactive}(Currently {X:mult,C:white} X#2# {C:inactive} Mult)",
+                },
+                unlock = {
+                    "Continue a saved run",
+                    "from the main menu",
+                },
+            },
         },
         Planet = {
             c_uranus = {
