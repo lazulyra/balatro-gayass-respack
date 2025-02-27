@@ -224,6 +224,22 @@ return {
                     "from the main menu",
                 },
             },
+            j_crazy={
+                name = "Queer Joker",
+                text = {
+                    "{C:red}+#1#{} Mult if played",
+                    "hand contains",
+                    "a {C:attention}#2#",
+                },
+            },
+            j_half={
+                name="Half a Car",
+                text={
+                    "{C:red}+#1#{} Mult if played",
+                    "hand contains",
+                    "{C:attention}#2#{} or fewer cards",
+                },
+            },
         },
         Planet = {
             c_uranus = {
