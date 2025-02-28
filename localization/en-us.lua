@@ -240,6 +240,15 @@ return {
                     "{C:attention}#2#{} or fewer cards",
                 },
             },
+            j_splash = {
+                name = "Jeff the Land Shark",
+                text = {
+                    "Every {C:attention}played card",
+                    "counts in scoring",
+                    " ",
+                    "{C:blue}Yaoi yaoi!{}",
+                },
+            },
         },
         Planet = {
             c_uranus = {
