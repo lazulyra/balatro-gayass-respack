@@ -249,6 +249,17 @@ return {
                     "{C:blue}Yaoi yaoi!{}",
                 },
             },
+            j_mime={
+                name = "Winter Soldier",
+                text = {
+                    "Retrigger all",
+                    "card {C:attention}held in",
+                    "{C:attention}hand{} abilities",
+                    " ",
+                    "{C:red}Armed and{}",
+                    "{C:red}Dangerous!{}",
+                },
+            },
         },
         Planet = {
             c_uranus = {
