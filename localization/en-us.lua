@@ -260,6 +260,15 @@ return {
                     "{C:red}Dangerous!{}",
                 },
             },
+            j_ancient={
+                name="Iron Golem",
+                text={
+                    "Each played card with",
+                    "{V:1}#2#{} suit gives",
+                    "{X:mult,C:white} X#1# {} Mult when scored,",
+                    "{s:0.8}suit changes at end of round",
+                },
+            },
         },
         Planet = {
             c_uranus = {
