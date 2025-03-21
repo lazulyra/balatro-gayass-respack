@@ -249,7 +249,7 @@ return {
                     "{C:blue}Yaoi yaoi!{}",
                 },
             },
-            j_mime={
+            j_mime = {
                 name = "Winter Soldier",
                 text = {
                     "Retrigger all",
@@ -260,13 +260,21 @@ return {
                     "{C:red}Dangerous!{}",
                 },
             },
-            j_ancient={
-                name="Iron Golem",
-                text={
+            j_ancient = {
+                name = "Iron Golem",
+                text = {
                     "Each played card with",
                     "{V:1}#2#{} suit gives",
                     "{X:mult,C:white} X#1# {} Mult when scored,",
                     "{s:0.8}suit changes at end of round",
+                },
+            },
+            j_hiker = {
+                name = "Nubby",
+                text = {
+                    "Every played {C:attention}card{}",
+                    "permanently gains",
+                    "{C:chips}+#1#{} Chips when scored",
                 },
             },
         },
