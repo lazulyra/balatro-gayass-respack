@@ -16,7 +16,9 @@ SMODS.Atlas { key = "Spectral", path = "Consumable-gayass_respack.png", px = 71,
 SMODS.Atlas { key = "Planet", path = "Consumable-gayass_respack.png", px = 71, py = 95, prefix_config = false }
 SMODS.Atlas { key = "Centers", path = "Enhancers-gayass_respack.png", px = 71, py = 95, prefix_config = false } -- Centers: enhancers. not sure why it doesn't work for the Soul, will have to work out later
 SMODS.Atlas { key = "Voucher", path = "Vouchers-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "balatro", path = "Logo-gayass_repack.png", px=333, py=216, prefix_config = false } 
+SMODS.Atlas { key = "balatro", path = "Logo-gayass_repack.png", px = 333, py = 216, prefix_config = false } 
+
+-- SMODS.Atlas { key = "booster", path = "boosters-gayass-repack.png", prefix_config = false } (unsure of what "px" and "py" i need to enter here)
 
 -- Music
 --[[
