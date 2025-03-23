@@ -277,6 +277,15 @@ return {
                     "{C:chips}+#1#{} Chips when scored",
                 },
             },
+            j_faceless = {
+                name = "Slender man",
+                text = {
+                    "Earn {C:money}$#1#{} if {C:attention}#2#{} or",
+                    "more {C:attention}face cards{}",
+                    "are discarded",
+                    "at the same time",
+                },
+            },
         },
         Planet = {
             c_uranus = {
@@ -295,15 +304,6 @@ return {
                     "{C:attention}#2#",
                     "{C:mult}+#3#{} Mult and",
                     "{C:chips}+#4#{} chips",
-                },
-            },
-            j_faceless = {
-                name = "Slenderman",
-                text = {
-                    "Earn {C:money}$#1#{} if {C:attention}#2#{} or",
-                    "more {C:attention}face cards{}",
-                    "are discarded",
-                    "at the same time",
                 },
             },
         },
