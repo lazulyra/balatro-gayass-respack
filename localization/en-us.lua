@@ -278,7 +278,7 @@ return {
                 },
             },
             j_faceless = {
-                name = "Slender man",
+                name = "Slenderman",
                 text = {
                     "Earn {C:money}$#1#{} if {C:attention}#2#{} or",
                     "more {C:attention}face cards{}",
