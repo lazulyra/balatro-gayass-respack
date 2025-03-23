@@ -297,6 +297,15 @@ return {
                     "{C:chips}+#4#{} chips",
                 },
             },
+            j_faceless = {
+                name = "Slenderman",
+                text = {
+                    "Earn {C:money}$#1#{} if {C:attention}#2#{} or",
+                    "more {C:attention}face cards{}",
+                    "are discarded",
+                    "at the same time",
+                },
+            },
         },
         Spectral = {
             c_ankh = {
