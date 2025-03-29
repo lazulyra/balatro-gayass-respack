@@ -286,6 +286,28 @@ return {
                     "at the same time",
                 },
             },
+            j_idol = {
+                name = "Aku Aku",
+                text = {
+                    "Each played {C:attention}#2#",
+                    "of {V:1}#3#{} gives",
+                    "{X:mult,C:white} X#1# {} Mult when scored",
+                    "{s:0.8}Card changes every round",
+                },
+                unlock = {
+                    "In one hand,",
+                    "earn at least",
+                    "{E:1,C:attention}#1#{} chips",
+                },
+            },
+            j_flash = {
+                name = "Jjjjjjjjj",
+                text = {
+                    "This Joker gains {C:mult}+#1#{} Mult",
+                    "per {C:attention}reroll{} in the shop",
+                    "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
+                },
+            },
         },
         Planet = {
             c_uranus = {
