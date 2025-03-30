@@ -1,4 +1,4 @@
-SMODS.Language { key = "en-us", label = "English", font = {
+SMODS.Language { key = "en-renogare", label = "Renogare", font = {
     file = "Renogare-Regular.ttf",
     render_scale = G.TILESIZE * 6.5,
     TEXT_HEIGHT_SCALE = 0.83,
@@ -9,16 +9,58 @@ SMODS.Language { key = "en-us", label = "English", font = {
 }, loc_key = "en-us" }
 
 -- Atlases
-SMODS.Atlas { key = "cards_2", path = "8BitDeck_opt2-gayass_respack.png", px = 71, py = 95, prefix_config = false } -- cards_2: high contrast colours card set
-SMODS.Atlas { key = "Joker", path = "Jokers-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "Tarot", path = "Consumable-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "Spectral", path = "Consumable-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "Planet", path = "Consumable-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "Centers", path = "Enhancers-gayass_respack.png", px = 71, py = 95, prefix_config = false } -- Centers: enhancers. not sure why it doesn't work for the Soul, will have to work out later
-SMODS.Atlas { key = "Voucher", path = "Vouchers-gayass_respack.png", px = 71, py = 95, prefix_config = false }
-SMODS.Atlas { key = "balatro", path = "Logo-gayass_repack.png", px = 333, py = 216, prefix_config = false } 
-SMODS.Atlas { key = "booster", path = "boosters-gayass-repack.png", px = 71, py = 95, prefix_config = false }
+Malverk.AltTexture({
+    key = 'jokers',      -- the key of the texture
+    set = 'Joker',       -- define the object type that you are retexturing, see wiki for full list of types
+    path = 'jokers.png', -- the filename of your spritesheet, saved in assets/1x AND assets/2x
+    original_sheet = true,
+    keys = {
+        "j_caino"
+    },
+    loc_txt = {}
+})
+SMODS.Atlas { key = "Jokers", path = "Jokers-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "Tarot", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "Spectral", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "Planet", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "centers", path = "Enhancers-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "Voucher", path = "Vouchers-gayass_respack.png", px = 71, py = 95 }
+SMODS.Atlas { key = "balatro", path = "Logo-gayass_repack.png", px = 333, py = 216 }
+SMODS.Atlas { key = "booster", path = "boosters-gayass-repack.png", px = 71, py = 95 }
 
+--------------------
+
+for _, suit in ipairs({ 'hearts', 'clubs', 'diamonds', 'spades' }) do
+    local deck_skin = SMODS.Atlas { key = "celeste_" .. suit, path = "celeste/" .. suit .. ".png", px = 71, py = 95 }
+
+    SMODS.DeckSkin({
+        key = "deck_skin_" .. deck_skin.key,
+        suit = suit:gsub("^%l", string.upper),
+        loc_txt = 'Celeste: ' .. suit:gsub("^%l", string.upper),
+        palettes = {
+            {
+                key = "hc",
+                ranks = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace" },
+                display_ranks = { "King", "Queen", "Jack" },
+                atlas = deck_skin.key,
+                pos_style = "ranks",
+                loc_txt = 'Celeste: ' .. suit:gsub("^%l", string.upper),
+                hc_default = true
+            }
+        }
+    })
+end
+
+
+
+--[[ TexturePack({
+    key = 'gayass_Skin',
+    textures = { 'gayass_respack_celeste_faces' },
+    loc_txt = {
+        name = 'Gayass Resource Pack',
+        text = { 'R' }
+    }
+}) ]]
 -- Music
 --[[
 music1: main theme
@@ -31,4 +73,3 @@ music5: boss music
 
 -- Sounds
 -- SMODS.Sound { key = "chips1", path = "chips1.ogg", prefix_config = false }
-

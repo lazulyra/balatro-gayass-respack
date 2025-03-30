@@ -2,13 +2,22 @@
   "id": "GayassResourcePack",
   "name": "Gayass Resource Pack",
   "display_name": "CTP",
-  "author": ["jessbian", "lazulyra"],
+  "author": [
+    "jessbian",
+    "lazulyra",
+    "archaic_anarchist"
+  ],
   "description": "Balatro resource pack themed around references from jess' Discord server",
   "prefix": "gayass_respack",
   "main_file": "main.lua",
   "priority": 0,
   "badge_colour": "5BCEFA",
   "badge_text_colour": "F5A9B8",
-  "version": "0.0.1~1",
-  "dependencies": ["Steamodded (>=1.*)", "Lovely (>=0.6)", "Balatro (>=1.0.1m)"]
+  "version": "1.0.0",
+  "dependencies": [
+    "Steamodded (>=1.*)",
+    "Lovely (>=0.6)",
+    "Balatro (>=1.0.1m)",
+    "malverk (>=1.1.3)"
+  ]
 }
