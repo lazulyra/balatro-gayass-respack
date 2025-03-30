@@ -4,7 +4,7 @@ return {
             b_ghost = {
                 name = "Oomfie Deck",
                 text = {
-                    "{C:spectral}Spectral{} cards may",
+                    "{C:spectral}Oomfie{} cards may",
                     "appear in the shop,",
                     "start with a {C:spectral,T:c_hex}Jess{} card",
                     " ",
@@ -77,7 +77,7 @@ return {
                 name = "Dimmadome",
                 text = {
                     "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
-                    "and {C:spectral}Spectral{} cards may",
+                    "and {C:spectral}Oomfie{} cards may",
                     "appear multiple times",
                 },
                 unlock = {
@@ -308,6 +308,24 @@ return {
                     "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
                 },
             },
+            j_seance={
+                name="Séance",
+                text={
+                    "If {C:attention}poker hand{} is a",
+                    "{C:attention}#1#{}, create a",
+                    "random {C:spectral}Oomfie{} card",
+                    "{C:inactive}(Must have room)",
+                },
+            },
+            j_sixth_sense={
+                name="Sixth Sense",
+                text={
+                    "If {C:attention}first hand{} of round is",
+                    "a single {C:attention}6{}, destroy it and",
+                    "create a {C:spectral}Oomfie{} card",
+                    "{C:inactive}(Must have room)",
+                },
+            },
         },
         Planet = {
             c_uranus = {
@@ -491,12 +509,69 @@ return {
                     "down to {C:attention}#1#{} cards",
                 },
             },
+            v_omen_globe={
+                name="Omen Globe",
+                text={
+                    "{C:spectral}Oomfie{} cards may",
+                    "appear in any of",
+                    "the {C:attention}Arcana Packs",
+                },
+                unlock={
+                    "Use a total of {C:attention}#1#",
+                    "{C:tarot}Tarot{} cards from any",
+                    "{C:tarot}Arcana Pack",
+                    "{C:inactive}(#2#)",
+                },
+            },
+        },
+        Tag = {
+            tag_ethereal={
+                name="Ethereal Tag",
+                text={
+                    "Gives a free",
+                    "{C:spectral}Oomfie Pack",
+                },
+            },
+        },
+        Other = {
+            p_spectral_jumbo={
+                name="Jumbo Oomfie Pack",
+                text={
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                    "be used immediately",
+                },
+            },
+            p_spectral_mega={
+                name="Mega Oomfie Pack",
+                text={
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                    "be used immediately",
+                },
+            },
+            p_spectral_normal={
+                name="Oomfie Pack",
+                text={
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                    "be used immediately",
+                },
+            },
         },
     },
     misc = {
+        achievement_descriptions = {
+            clairvoyance="Discover every Oomfie card",
+        },
         dictionary = {
-            k_again_ex="Once more!",
+            b_spectral_cards = "Oomfie Cards",
+            b_stat_spectrals = "Oomfies",
+            k_again_ex = "Once more!",
+            k_plus_spectral = "+1 Oomfie",
             k_nope_ex = "Aw, dang it!",
+            k_spectral = "Oomfie",
+            k_spectral_pack = "Oomfie Pack",
         },
         poker_hands={
             Straight="Gay",
