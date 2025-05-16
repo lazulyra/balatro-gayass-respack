@@ -1,21 +1,40 @@
-SMODS.Language { key = "en-renogare", label = "Renogare", font = {
-    file = "Renogare-Regular.ttf",
-    render_scale = G.TILESIZE * 6.5,
-    TEXT_HEIGHT_SCALE = 0.83,
-    TEXT_OFFSET = { x = 10, y = -13 },
-    FONTSCALE = 0.1,
-    squish = 1,
-    DESCSCALE = 1
-}, loc_key = "en-us" }
+-- AltTextures
 
--- Atlases
 AltTexture({
-    key = "jokers",             -- the key of the texture
-    set = "Joker",              -- define the object type that you are retexturing, see wiki for full list of types
-    path = "gayass/jokers.png", -- the filename of your spritesheet, saved in assets/1x AND assets/2x
+    key = "joker",       -- the key of the texture
+    set = "Joker",       -- define the object type that you are retexturing, see wiki for full list of types
+    path = "jokers.png", -- the filename of your spritesheet, saved in assets/1x AND assets/2x
+    soul = "jokers.png",
     original_sheet = true,
     keys = {
-        "j_caino"
+        "j_joker",           -- 1
+        "j_half",            -- 16
+        "j_four_fingers",    -- 18
+        "j_mime",            -- 19
+        "j_mystic_summit",   -- 23
+        "j_dusk",            -- 28
+        "j_space",           -- 45
+        "j_egg",             -- 46
+        "j_splash",          -- 52
+        "j_hiker",           -- 56
+        "j_faceless",        -- 57
+        "j_red_card",        -- 63
+        "j_square",          -- 65
+        "j_shortcut",        -- 69
+        "j_photograph",      -- 78
+        "j_gift",            -- 79
+        "j_turtle_bean",     -- 80
+        "j_trading",         -- 95
+        "j_ancient",         -- 99
+        "j_smiley",          -- 104
+        "j_campfire",        -- 105
+        "j_mr_bones",        -- 107
+        "j_sock_and_buskin", -- 109
+        "j_throwback",       -- 114
+        "j_hanging_chad",    -- 115
+        "j_ring_master",     -- 121
+        "j_idol",            -- 127
+        "j_invisible",       -- 137
     },
     loc_txt = {
         name = "Gayass Jokers"
@@ -23,20 +42,112 @@ AltTexture({
 })
 
 AltTexture({
+    key = "legendary_joker",
+    set = "Joker",
+    path = "legendary_jokers.png",
+    soul = "legendary_jokers.png",
+    keys = {
+        "j_caino",
+    },
+    soul_keys = {
+        "j_caino",
+    },
+})
+
+AltTexture({
     key = "tarot",
     set = "Tarot",
-    path = "gayass/consumable.png"
+    path = "consumables.png",
+    original_sheet = true,
+    keys = {
+        "c_wheel_of_fortune",
+        "c_death",
+        "c_tower",
+    },
+    loc_txt = {
+        name = "Gayass Tarot Cards"
+    }
 })
--- SMODS.Atlas { key = "Jokers", path = "Jokers-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "Tarot", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "Spectral", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "Planet", path = "Consumable-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "centers", path = "Enhancers-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "Voucher", path = "Vouchers-gayass_respack.png", px = 71, py = 95 }
--- SMODS.Atlas { key = "balatro", path = "Logo-gayass_repack.png", px = 333, py = 216 }
--- SMODS.Atlas { key = "booster", path = "boosters-gayass-repack.png", px = 71, py = 95 }
 
---------------------
+AltTexture({
+    key = "spectral",
+    set = "Spectral",
+    path = "consumables.png",
+    soul = "enhancers.png",
+    original_sheet = true,
+    keys = {
+        "c_familiar",
+        "c_grim",
+        "c_incantation",
+        "c_aura",
+        "c_wraith",
+        "c_sigil",
+        "c_ouija",
+        "c_ectoplas",
+        "c_immolate",
+        "c_ankh",
+        "c_hex",
+        "c_trance",
+        "c_medium",
+        "c_cryptid",
+        "c_soul",
+        "c_black_hole",
+    },
+    loc_txt = {
+        name = "Gayass Spectral Cards"
+    }
+})
+
+AltTexture({
+    key = "planet",
+    set = "Planet",
+    path = "consumables.png",
+    original_sheet = true,
+    keys = {
+        "c_venus",
+        "c_uranus",
+    },
+    loc_txt = {
+        name = "Gayass Planet Cards"
+    }
+})
+
+AltTexture({
+    key = "voucher",
+    set = "Voucher",
+    path = "vouchers.png",
+    original_sheet = true,
+    keys = {
+        "v_paint_brush",
+        "v_palette",
+    },
+    loc_txt = {
+        name = "Gayass Vouchers"
+    }
+})
+
+--[[ AltTexture({
+    key = "logo",
+    set = "balatro",
+    path = "logo.png",
+    original_sheet = true,
+    loc_txt = {
+        name = "Gayass Balatro Logo"
+    }
+}) ]]
+
+--[[ AltTexture({
+    key = "booster",
+    set = "booster",
+    path = "boosters.png",
+    original_sheet = true,
+    keys = {},
+    loc_txt = {
+        name = "Gayass Booster Packs"
+    }
+}) ]]
+
+-- Deck Skins
 
 for _, suit in ipairs({ "hearts", "clubs", "diamonds", "spades" }) do
     local deck_skin = SMODS.Atlas { key = "celeste_" .. suit, path = "decks/celeste/" .. suit .. ".png", px = 71, py = 95 }
@@ -59,11 +170,20 @@ for _, suit in ipairs({ "hearts", "clubs", "diamonds", "spades" }) do
     })
 end
 
-
+-- Texture Pack
 
 TexturePack({
     key = "gayass",
-    textures = { "gayass_respack_jokers" },
+    textures = {
+        "gayass_respack_joker",
+        "gayass_respack_legendary_joker",
+        "gayass_respack_tarot",
+        "gayass_respack_spectral",
+        "gayass_respack_planet",
+        "gayass_respack_voucher",
+        -- "gayass_respack_logo", -- not supported by Malverk
+        -- "gayass_respack_booster",
+    },
     loc_txt = {
         name = "Gayass Resource Pack",
         text = { "R" }
