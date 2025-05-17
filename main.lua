@@ -209,10 +209,6 @@ for _, suit in ipairs({ "hearts", "clubs", "diamonds", "spades" }) do
     })
 end
 
--- Trance?
-
-
-
 -- Texture Pack
 
 TexturePack({
@@ -223,7 +219,9 @@ TexturePack({
         text = { "jebs can you erm not" }
     }
 })
+
 -- Music
+
 --[[
 music1: main theme
 music2: booster theme (not including Planet)
