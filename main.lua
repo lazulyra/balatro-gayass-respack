@@ -1,130 +1,169 @@
 -- AltTextures
 
-AltTexture({
-    key = "joker",       -- the key of the texture
-    set = "Joker",       -- define the object type that you are retexturing, see wiki for full list of types
-    path = "jokers.png", -- the filename of your spritesheet, saved in assets/1x AND assets/2x
-    soul = "jokers.png",
-    original_sheet = true,
-    keys = {
-        "j_joker",           -- 1
-        "j_half",            -- 16
-        "j_four_fingers",    -- 18
-        "j_mime",            -- 19
-        "j_mystic_summit",   -- 23
-        "j_dusk",            -- 28
-        "j_space",           -- 45
-        "j_egg",             -- 46
-        "j_splash",          -- 52
-        "j_hiker",           -- 56
-        "j_faceless",        -- 57
-        "j_red_card",        -- 63
-        "j_square",          -- 65
-        "j_shortcut",        -- 69
-        "j_photograph",      -- 78
-        "j_gift",            -- 79
-        "j_turtle_bean",     -- 80
-        "j_trading",         -- 95
-        "j_ancient",         -- 99
-        "j_smiley",          -- 104
-        "j_campfire",        -- 105
-        "j_mr_bones",        -- 107
-        "j_sock_and_buskin", -- 109
-        "j_throwback",       -- 114
-        "j_hanging_chad",    -- 115
-        "j_ring_master",     -- 121
-        "j_idol",            -- 127
-        "j_invisible",       -- 137
-    },
-    loc_txt = {
-        name = "Gayass Jokers"
-    }
-})
+local alt_textures = {}
 
-AltTexture({
-    key = "legendary_joker",
-    set = "Joker",
-    path = "legendary_jokers.png",
-    soul = "legendary_jokers.png",
-    keys = {
-        "j_caino",
-    },
-    soul_keys = {
-        "j_caino",
-    },
-})
+local jokers = {
+    "j_joker",           -- 1
+    "j_half",            -- 16
+    "j_four_fingers",    -- 18
+    "j_mime",            -- 19
+    "j_mystic_summit",   -- 23
+    "j_dusk",            -- 28
+    "j_space",           -- 45
+    "j_egg",             -- 46
+    "j_splash",          -- 52
+    "j_hiker",           -- 56
+    "j_faceless",        -- 57
+    "j_red_card",        -- 63
+    "j_square",          -- 65
+    "j_shortcut",        -- 69
+    "j_photograph",      -- 78
+    "j_gift",            -- 79
+    "j_turtle_bean",     -- 80
+    "j_trading",         -- 95
+    "j_flash",           -- 96
+    "j_ancient",         -- 99
+    "j_smiley",          -- 104
+    "j_campfire",        -- 105
+    "j_mr_bones",        -- 107
+    "j_sock_and_buskin", -- 109
+    "j_throwback",       -- 114
+    "j_hanging_chad",    -- 115
+    "j_ring_master",     -- 121
+    "j_idol",            -- 127
+    "j_invisible",       -- 137
+}
 
-AltTexture({
-    key = "tarot",
-    set = "Tarot",
-    path = "consumables.png",
-    original_sheet = true,
-    keys = {
-        "c_wheel_of_fortune",
-        "c_death",
-        "c_tower",
-    },
-    loc_txt = {
-        name = "Gayass Tarot Cards"
-    }
-})
+for _, joker in ipairs(jokers) do
+    AltTexture({
+        key = joker,
+        set = "Joker",
+        path = "joker/" .. joker .. ".png",
+        keys = {
+            joker
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. joker)
+end
 
-AltTexture({
-    key = "spectral",
-    set = "Spectral",
-    path = "consumables.png",
-    soul = "enhancers.png",
-    original_sheet = true,
-    keys = {
-        "c_familiar",
-        "c_grim",
-        "c_incantation",
-        "c_aura",
-        "c_wraith",
-        "c_sigil",
-        "c_ouija",
-        "c_ectoplas",
-        "c_immolate",
-        "c_ankh",
-        "c_hex",
-        "c_trance",
-        "c_medium",
-        "c_cryptid",
-        "c_soul",
-        "c_black_hole",
-    },
-    loc_txt = {
-        name = "Gayass Spectral Cards"
-    }
-})
+local legendary_jokers = {
+    "j_caino",
+}
 
-AltTexture({
-    key = "planet",
-    set = "Planet",
-    path = "consumables.png",
-    original_sheet = true,
-    keys = {
-        "c_venus",
-        "c_uranus",
-    },
-    loc_txt = {
-        name = "Gayass Planet Cards"
-    }
-})
+for _, joker in ipairs(legendary_jokers) do
+    AltTexture({
+        key = joker,
+        set = "Joker",
+        path = "legendary_joker/" .. joker .. ".png",
+        keys = {
+            joker,
+        },
+        soul_keys = {
+            joker,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. joker)
+end
 
-AltTexture({
-    key = "voucher",
-    set = "Voucher",
-    path = "vouchers.png",
-    original_sheet = true,
-    keys = {
-        "v_paint_brush",
-        "v_palette",
-    },
-    loc_txt = {
-        name = "Gayass Vouchers"
-    }
-})
+-- Tarot
+
+local tarots = {
+    "c_wheel_of_fortune",
+    "c_death",
+    "c_tower",
+}
+
+for _, tarot in ipairs(tarots) do
+    AltTexture({
+        key = tarot,
+        set = "Tarot",
+        path = "tarot/" .. tarot .. ".png",
+        keys = {
+            tarot,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. tarot)
+end
+
+-- Spectral
+
+local spectrals = {
+    "c_familiar",
+    "c_grim",
+    "c_incantation",
+    "c_aura",
+    "c_wraith",
+    "c_sigil",
+    "c_ouija",
+    "c_ectoplasm",
+    "c_immolate",
+    "c_ankh",
+    "c_hex",
+    "c_trance",
+    "c_medium",
+    "c_cryptid",
+    "c_soul",
+    "c_black_hole",
+}
+
+for _, spectral in ipairs(spectrals) do
+    AltTexture({
+        key = spectral,
+        set = "Spectral",
+        path = "spectral/" .. spectral .. ".png",
+        keys = {
+            spectral,
+        },
+        soul_keys = {
+            spectral,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. spectral)
+end
+
+-- Planets
+
+local planets = {
+    "c_venus",
+    "c_uranus",
+}
+
+for _, planet in ipairs(planets) do
+    AltTexture({
+        key = planet,
+        set = "Planet",
+        path = "planet/" .. planet .. ".png",
+        keys = {
+            planet,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. planet)
+end
+
+-- Vouchers
+
+local vouchers = {
+    "v_paint_brush",
+    "v_palette",
+}
+
+for _, voucher in ipairs(vouchers) do
+    AltTexture({
+        key = voucher,
+        set = "Voucher",
+        path = "voucher/" .. voucher .. ".png",
+        keys = {
+            voucher,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. voucher)
+end
 
 --[[ AltTexture({
     key = "logo",
@@ -134,7 +173,7 @@ AltTexture({
     loc_txt = {
         name = "Gayass Balatro Logo"
     }
-}) ]]
+}) ]] -- disabled because Malverk doesn't support logo changing
 
 --[[ AltTexture({
     key = "booster",
@@ -145,7 +184,7 @@ AltTexture({
     loc_txt = {
         name = "Gayass Booster Packs"
     }
-}) ]]
+}) ]] -- disabled because I don't see any differences from vanilla
 
 -- Deck Skins
 
@@ -170,23 +209,18 @@ for _, suit in ipairs({ "hearts", "clubs", "diamonds", "spades" }) do
     })
 end
 
+-- Trance?
+
+
+
 -- Texture Pack
 
 TexturePack({
     key = "gayass",
-    textures = {
-        "gayass_respack_joker",
-        "gayass_respack_legendary_joker",
-        "gayass_respack_tarot",
-        "gayass_respack_spectral",
-        "gayass_respack_planet",
-        "gayass_respack_voucher",
-        -- "gayass_respack_logo", -- not supported by Malverk
-        -- "gayass_respack_booster",
-    },
+    textures = alt_textures,
     loc_txt = {
         name = "Gayass Resource Pack",
-        text = { "R" }
+        text = { "jebs can you erm not" }
     }
 })
 -- Music
