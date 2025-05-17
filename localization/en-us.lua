@@ -308,22 +308,29 @@ return {
                     "{C:inactive}(Currently {C:mult}+#2#{C:inactive} Mult)",
                 },
             },
-            j_seance={
-                name="Séance",
-                text={
+            j_seance = {
+                name = "Séance",
+                text = {
                     "If {C:attention}poker hand{} is a",
                     "{C:attention}#1#{}, create a",
                     "random {C:spectral}Oomfie{} card",
                     "{C:inactive}(Must have room)",
                 },
             },
-            j_sixth_sense={
-                name="Sixth Sense",
-                text={
+            j_sixth_sense = {
+                name = "Sixth Sense",
+                text = {
                     "If {C:attention}first hand{} of round is",
                     "a single {C:attention}6{}, destroy it and",
                     "create a {C:spectral}Oomfie{} card",
                     "{C:inactive}(Must have room)",
+                },
+            },
+            j_misprint = {
+                name = "MISINPUT",
+                text = {
+                    "",
+                    "YOU CALM DOWN"
                 },
             },
         },
@@ -430,7 +437,7 @@ return {
                 },
             },
             c_trance={
-                name="Ants",
+                name="Nat",
                 text={
                     "Add a {C:blue}Blue Seal{}",
                     "to {C:attention}1{} selected",
@@ -470,6 +477,14 @@ return {
                     "card in your hand,",
                     "add {C:attention}#1#{} random {C:attention}Enhanced",
                     "{C:attention}Aces{} to your hand",
+                },
+            },
+            c_talisman={
+                name="Sarah",
+                text={
+                    "Add a {C:attention}Gold Seal{}",
+                    "to {C:attention}1{} selected",
+                    "card in your hand",
                 },
             },
         },
