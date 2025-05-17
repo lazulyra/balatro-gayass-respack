@@ -8,6 +8,7 @@ local jokers = {
     "j_four_fingers",    -- 18
     "j_mime",            -- 19
     "j_mystic_summit",   -- 23
+    "j_misprint",        -- 27
     "j_dusk",            -- 28
     "j_space",           -- 45
     "j_egg",             -- 46
@@ -94,6 +95,7 @@ local spectrals = {
     "c_familiar",
     "c_grim",
     "c_incantation",
+    "c_talisman",
     "c_aura",
     "c_wraith",
     "c_sigil",
@@ -175,16 +177,27 @@ end
     }
 }) ]] -- disabled because Malverk doesn't support logo changing
 
---[[ AltTexture({
-    key = "booster",
-    set = "booster",
-    path = "boosters.png",
-    original_sheet = true,
-    keys = {},
-    loc_txt = {
-        name = "Gayass Booster Packs"
-    }
-}) ]] -- disabled because I don't see any differences from vanilla
+-- Booster Packs
+
+local boosters = {
+    "p_spectral_normal_1",
+    "p_spectral_normal_2",
+    "p_spectral_jumbo_1 ",
+    "p_spectral_mega_1",
+}
+
+for _, booster in ipairs(boosters) do
+    AltTexture({
+        key = booster,
+        set = "Booster",
+        path = "booster/" .. booster .. ".png",
+        keys = {
+            booster,
+        },
+        -- localization = true -- TBD
+    })
+    table.insert(alt_textures, "gayass_respack_" .. booster)
+end
 
 -- Deck Skins
 

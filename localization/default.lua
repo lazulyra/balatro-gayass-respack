@@ -36,7 +36,14 @@ return {
                 j_hanging_chad = { name = "Down the Lane" },
                 j_invisible = { name = "MISSING TEXTURE" },
                 j_red_card = { name = "Blue Card" },
-                j_ring_master = { name = "Dimmadome" },
+                j_ring_master = {
+                    name = "Dimmadome",
+                    text = {
+                        "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
+                        "and {C:spectral}Oomfie{} cards may",
+                        "appear multiple times",
+                    },
+                },
                 j_smiley = { name = "Frowny Face" },
                 j_sock_and_buskin = { name = "Buskin and Sock" },
                 j_space = { name = "Amogus" },
@@ -121,6 +128,31 @@ return {
                 j_faceless = { name = "Slenderman" },
                 j_idol = { name = "Aku Aku" },
                 j_flash = { name = "Jjjjjjjjj" },
+                j_seance = {
+                    name = "Séance",
+                    text = {
+                        "If {C:attention}poker hand{} is a",
+                        "{C:attention}#1#{}, create a",
+                        "random {C:spectral}Oomfie{} card",
+                        "{C:inactive}(Must have room)",
+                    },
+                },
+                j_sixth_sense = {
+                    name = "Sixth Sense",
+                    text = {
+                        "If {C:attention}first hand{} of round is",
+                        "a single {C:attention}6{}, destroy it and",
+                        "create a {C:spectral}Oomfie{} card",
+                        "{C:inactive}(Must have room)",
+                    },
+                },
+                j_misprint = {
+                    name = "MISINPUT",
+                    text = {
+                        "",
+                        "YOU CALM DOWN"
+                    },
+                },
             },
             alt_tex_gayass_planets = {
                 name = "Gayass Planet Cards",
@@ -129,21 +161,22 @@ return {
             },
             alt_tex_gayass_spectrals = {
                 name = "Gayass Spectral Cards",
-                c_ankh = { name = "Honk Shoo" },
-                c_aura = { name = "Lyra" },
-                c_ectoplasm = { name = "Estrogen" },
-                c_ouija = { name = "Luigi" },
-                c_soul = { name = "Crystal Heart" },
-                c_cryptid = { name = "Chiara" },
-                c_medium = { name = "Large" },
-                c_immolate = { name = "Maddie" },
-                c_wraith = { name = "Ari" },
-                c_hex = { name = "Jess" },
-                c_trance = { name = "Ants" },
-                c_incantation = { name = "OverSky" },
                 c_familiar = { name = "Panda" },
-                c_sigil = { name = "Mio" },
                 c_grim = { name = "Ruri" },
+                c_incantation = { name = "OverSky" },
+                c_talisman = { name = "Sarah" },
+                c_aura = { name = "Lyra" },
+                c_wraith = { name = "Ari" },
+                c_sigil = { name = "Mio" },
+                c_ouija = { name = "Luigi" },
+                c_ectoplasm = { name = "Estrogen" },
+                c_immolate = { name = "Maddie" },
+                c_ankh = { name = "Honk Shoo" },
+                c_hex = { name = "Jess" },
+                c_trance = { name = "Nat" },
+                c_medium = { name = "Large" },
+                c_cryptid = { name = "Chiara" },
+                c_soul = { name = "Crystal Heart" },
             },
             alt_tex_gayass_tarots = {
                 name = "Gayass Tarot Cards",
@@ -154,6 +187,51 @@ return {
                 name = "Gayass Vouchers",
                 v_paint_brush = { name = "Mushroom" },
                 v_palette = { name = "Mega Mushroom" },
+                v_omen_globe = {
+                    name = "Omen Globe",
+                    text = {
+                        "{C:spectral}Oomfie{} cards may",
+                        "appear in any of",
+                        "the {C:attention}Arcana Packs",
+                    },
+                },
+            },
+            alt_tex_gayass_tags = {
+                name = "Gayass Tags",
+                tag_ethereal = {
+                    name = "Ethereal Tag",
+                    text = {
+                        "Gives a free",
+                        "{C:spectral}Oomfie Pack",
+                    },
+                },
+            },
+            alt_tex_gayass_boosters = {
+                name = "Gayass Booster Packs",
+                p_spectral_jumbo = {
+                    name = "Jumbo Oomfie Pack",
+                    text = {
+                        "Choose {C:attention}#1#{} of up to",
+                        "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                        "be used immediately",
+                    },
+                },
+                p_spectral_mega = {
+                    name = "Mega Oomfie Pack",
+                    text = {
+                        "Choose {C:attention}#1#{} of up to",
+                        "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                        "be used immediately",
+                    },
+                },
+                p_spectral_normal = {
+                    name = "Oomfie Pack",
+                    text = {
+                        "Choose {C:attention}#1#{} of up to",
+                        "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                        "be used immediately",
+                    },
+                },
             }
         },
 
@@ -172,6 +250,11 @@ return {
         dictionary = {
             k_again_ex = "Once more!",
             k_nope_ex = "Aw, dang it!",
+            b_spectral_cards = "Oomfie Cards",
+            b_stat_spectrals = "Oomfies",
+            k_plus_spectral = "+1 Oomfie",
+            k_spectral = "Oomfie",
+            k_spectral_pack = "Oomfie Pack",
         },
         poker_hands = {
             Straight = "Gay",
