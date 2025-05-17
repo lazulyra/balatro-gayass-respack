@@ -8,7 +8,7 @@
     "archaic_anarchist"
   ],
   "description": "Balatro resource pack themed around references from jess' Discord server",
-  "prefix": "gayass_respack",
+  "prefix": "gayass",
   "main_file": "main.lua",
   "priority": 0,
   "badge_colour": "5BCEFA",

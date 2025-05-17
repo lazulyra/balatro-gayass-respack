@@ -14,144 +14,145 @@ return {
                     },
                 },
             },
-            alt_tex_gayass_jokers = {
-                name = "Gayass Jokers",
-                j_dusk = {
-                    name = "Golden Ridge",
-                    text = {
-                        "Retrigger all played",
-                        "cards in {C:attention}final",
-                        "{C:attention}hand{} of round",
-                    },
+            alt_tex_gayass_j_dusk = {
+                name = "Golden Ridge",
+                text = {
+                    "Retrigger all played",
+                    "cards in {C:attention}final",
+                    "{C:attention}hand{} of round",
                 },
-                j_four_fingers = {
-                    name = "Loss",
-                    text = {
-                        "All {C:attention}Flushes{} and",
-                        "{C:attention}Gays{} can be",
-                        "made with {C:attention}4{} cards",
-                    },
+            },
+            alt_tex_gayass_j_four_fingers = {
+                name = "Loss",
+                text = {
+                    "All {C:attention}Flushes{} and",
+                    "{C:attention}Gays{} can be",
+                    "made with {C:attention}4{} cards",
                 },
-                j_gift = { name = "present for lyla" },
-                j_hanging_chad = { name = "Down the Lane" },
-                j_invisible = { name = "MISSING TEXTURE" },
-                j_red_card = { name = "Blue Card" },
-                j_ring_master = {
-                    name = "Dimmadome",
-                    text = {
-                        "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
-                        "and {C:spectral}Oomfie{} cards may",
-                        "appear multiple times",
-                    },
+            },
+            alt_tex_gayass_j_mystic_summit = { name = "Farewell" },
+            alt_tex_gayass_j_egg = {},
+            alt_tex_gayass_j_photograph = {},
+            alt_tex_gayass_j_campfire = {},
+            alt_tex_gayass_j_gift = { name = "present for lyla" },
+            alt_tex_gayass_j_hanging_chad = { name = "Down the Lane" },
+            alt_tex_gayass_j_invisible = { name = "MISSING TEXTURE" },
+            alt_tex_gayass_j_red_card = { name = "Blue Card" },
+            alt_tex_gayass_j_ring_master = {
+                name = "Dimmadome",
+                text = {
+                    "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
+                    "and {C:spectral}Oomfie{} cards may",
+                    "appear multiple times",
                 },
-                j_smiley = { name = "Frowny Face" },
-                j_sock_and_buskin = { name = "Buskin and Sock" },
-                j_space = { name = "Amogus" },
-                j_square = {
-                    name = "Kevin",
-                    text = {
-                        "Kevin gains {C:chips}+#2#{} Chips",
-                        "if played hand has",
-                        "exactly {C:attention}4{} cards",
-                        "{C:inactive}(Currently {C:chips}#1#{C:inactive} Chips)",
-                    },
+            },
+            alt_tex_gayass_j_smiley = { name = "Frowny Face" },
+            alt_tex_gayass_j_sock_and_buskin = { name = "Buskin and Sock" },
+            alt_tex_gayass_j_space = { name = "Amogus" },
+            alt_tex_gayass_j_square = {
+                name = "Kevin",
+                text = {
+                    "Kevin gains {C:chips}+#2#{} Chips",
+                    "if played hand has",
+                    "exactly {C:attention}4{} cards",
+                    "{C:inactive}(Currently {C:chips}#1#{C:inactive} Chips)",
                 },
-                j_trading = { name = "Oshawott" },
-                j_turtle_bean = { name = "Baked Beans" },
-                j_joker = { name = "Bald Joker" },
-                j_shortcut = {
-                    name = "Demo Dash",
-                    text = {
-                        "Allows {C:attention}Gays{} to be",
-                        "made with gaps of {C:attention}1 rank",
-                        "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
-                    },
+            },
+            alt_tex_gayass_j_trading = { name = "Oshawott" },
+            alt_tex_gayass_j_turtle_bean = { name = "Baked Beans" },
+            alt_tex_gayass_j_joker = { name = "Bald Joker" },
+            alt_tex_gayass_j_shortcut = {
+                name = "Demo Dash",
+                text = {
+                    "Allows {C:attention}Gays{} to be",
+                    "made with gaps of {C:attention}1 rank",
+                    "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
                 },
-                j_superposition = {
-                    name = "Superposition",
-                    text = {
-                        "Create a {C:tarot}Tarot{} card if",
-                        "poker hand contains an",
-                        "{C:attention}Ace{} and a {C:attention}Gay{}",
-                        "{C:inactive}(Must have room)",
-                    },
+            },
+            alt_tex_gayass_j_superposition = {
+                name = "Superposition",
+                text = {
+                    "Create a {C:tarot}Tarot{} card if",
+                    "poker hand contains an",
+                    "{C:attention}Ace{} and a {C:attention}Gay{}",
+                    "{C:inactive}(Must have room)",
                 },
-                j_wee = { name = "Tiny Bald Joker" },
-                j_runner = {
-                    name = "Runner",
-                    text = {
-                        "Gains {C:chips}+#2#{} Chips",
-                        "if played hand",
-                        "contains a {C:attention}Gay{}",
-                        "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
-                    },
+            },
+            alt_tex_gayass_j_wee = { name = "Tiny Bald Joker" },
+            alt_tex_gayass_j_runner = {
+                name = "Runner",
+                text = {
+                    "Gains {C:chips}+#2#{} Chips",
+                    "if played hand",
+                    "contains a {C:attention}Gay{}",
+                    "{C:inactive}(Currently {C:chips}+#1#{C:inactive} Chips)",
                 },
-                j_caino = { name = "Big Chungus" },
-                j_mr_bones = {
-                    name = "Sans",
-                    text = {
-                        "Prevents Death",
-                        "if chips scored",
-                        "are at least {C:attention}25%",
-                        "of required chips",
-                        "{S:1.1,C:red,E:2}self destructs{}",
-                        " ",
-                        "{C:blue,E:1.1}\"You're gunna have{}",
-                        "{C:blue,E:1.1}a bad time.\"{}",
-                    },
+            },
+            alt_tex_gayass_j_caino = { name = "Big Chungus" },
+            alt_tex_gayass_j_mr_bones = {
+                name = "Sans",
+                text = {
+                    "Prevents Death",
+                    "if chips scored",
+                    "are at least {C:attention}25%",
+                    "of required chips",
+                    "{S:1.1,C:red,E:2}self destructs{}",
+                    " ",
+                    "{C:blue,E:1.1}\"You're gunna have{}",
+                    "{C:blue,E:1.1}a bad time.\"{}",
                 },
-                j_throwback = { name = "Yippee" },
-                j_crazy = { name = "Queer Joker" },
-                j_half = { name = "Half a Car" },
-                j_splash = {
-                    name = "Jeff the Land Shark",
-                    text = {
-                        "Every {C:attention}played card",
-                        "counts in scoring",
-                        " ",
-                        "{C:blue}Yaoi yaoi!{}",
-                    },
+            },
+            alt_tex_gayass_j_throwback = { name = "Yippee" },
+            alt_tex_gayass_j_crazy = { name = "Queer Joker" },
+            alt_tex_gayass_j_half = { name = "Half a Car" },
+            alt_tex_gayass_j_splash = {
+                name = "Jeff the Land Shark",
+                text = {
+                    "Every {C:attention}played card",
+                    "counts in scoring",
+                    " ",
+                    "{C:blue}Yaoi yaoi!{}",
                 },
-                j_mime = {
-                    name = "Winter Soldier",
-                    text = {
-                        "Retrigger all",
-                        "card {C:attention}held in",
-                        "{C:attention}hand{} abilities",
-                        " ",
-                        "{C:red}Armed and{}",
-                        "{C:red}Dangerous!{}",
-                    },
+            },
+            alt_tex_gayass_j_mime = {
+                name = "Winter Soldier",
+                text = {
+                    "Retrigger all",
+                    "card {C:attention}held in",
+                    "{C:attention}hand{} abilities",
+                    " ",
+                    "{C:red}Armed and{}",
+                    "{C:red}Dangerous!{}",
                 },
-                j_ancient = { name = "Iron Golem" },
-                j_hiker = { name = "Nubby" },
-                j_faceless = { name = "Slenderman" },
-                j_idol = { name = "Aku Aku" },
-                j_flash = { name = "Jjjjjjjjj" },
-                j_seance = {
-                    name = "Séance",
-                    text = {
-                        "If {C:attention}poker hand{} is a",
-                        "{C:attention}#1#{}, create a",
-                        "random {C:spectral}Oomfie{} card",
-                        "{C:inactive}(Must have room)",
-                    },
+            },
+            alt_tex_gayass_j_ancient = { name = "Iron Golem" },
+            alt_tex_gayass_j_hiker = { name = "Nubby" },
+            alt_tex_gayass_j_faceless = { name = "Slenderman" },
+            alt_tex_gayass_j_idol = { name = "Aku Aku" },
+            alt_tex_gayass_j_flash = { name = "Jjjjjjjjj" },
+            alt_tex_gayass_j_seance = {
+                name = "Séance",
+                text = {
+                    "If {C:attention}poker hand{} is a",
+                    "{C:attention}#1#{}, create a",
+                    "random {C:spectral}Oomfie{} card",
+                    "{C:inactive}(Must have room)",
                 },
-                j_sixth_sense = {
-                    name = "Sixth Sense",
-                    text = {
-                        "If {C:attention}first hand{} of round is",
-                        "a single {C:attention}6{}, destroy it and",
-                        "create a {C:spectral}Oomfie{} card",
-                        "{C:inactive}(Must have room)",
-                    },
+            },
+            alt_tex_gayass_j_sixth_sense = {
+                name = "Sixth Sense",
+                text = {
+                    "If {C:attention}first hand{} of round is",
+                    "a single {C:attention}6{}, destroy it and",
+                    "create a {C:spectral}Oomfie{} card",
+                    "{C:inactive}(Must have room)",
                 },
-                j_misprint = {
-                    name = "MISINPUT",
-                    text = {
-                        "",
-                        "YOU CALM DOWN"
-                    },
+            },
+            alt_tex_gayass_j_misprint = {
+                name = "MISINPUT",
+                text = {
+                    "",
+                    "YOU CALM DOWN"
                 },
             },
             alt_tex_gayass_planets = {
@@ -239,9 +240,7 @@ return {
             texpack_gayass = {
                 name = "Gayass Resource Pack",
                 text = {
-                    "hey jess can you",
-                    "redo this for me",
-                    "please :)",
+                    "jebs can you erm not",
                 },
             },
         },

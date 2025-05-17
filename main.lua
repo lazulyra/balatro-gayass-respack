@@ -43,9 +43,9 @@ for _, joker in ipairs(jokers) do
         keys = {
             joker
         },
-        -- localization = true -- TBD
+        localization = true,
     })
-    table.insert(alt_textures, "gayass_respack_" .. joker)
+    table.insert(alt_textures, "gayass_" .. joker)
 end
 
 local legendary_jokers = {
@@ -65,7 +65,7 @@ for _, joker in ipairs(legendary_jokers) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. joker)
+    table.insert(alt_textures, "gayass_" .. joker)
 end
 
 -- Tarot
@@ -86,7 +86,7 @@ for _, tarot in ipairs(tarots) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. tarot)
+    table.insert(alt_textures, "gayass_" .. tarot)
 end
 
 -- Spectral
@@ -124,7 +124,7 @@ for _, spectral in ipairs(spectrals) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. spectral)
+    table.insert(alt_textures, "gayass_" .. spectral)
 end
 
 -- Planets
@@ -144,7 +144,7 @@ for _, planet in ipairs(planets) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. planet)
+    table.insert(alt_textures, "gayass_" .. planet)
 end
 
 -- Vouchers
@@ -164,7 +164,7 @@ for _, voucher in ipairs(vouchers) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. voucher)
+    table.insert(alt_textures, "gayass_" .. voucher)
 end
 
 --[[ AltTexture({
@@ -182,7 +182,7 @@ end
 local boosters = {
     "p_spectral_normal_1",
     "p_spectral_normal_2",
-    "p_spectral_jumbo_1 ",
+    "p_spectral_jumbo_1",
     "p_spectral_mega_1",
 }
 
@@ -196,7 +196,7 @@ for _, booster in ipairs(boosters) do
         },
         -- localization = true -- TBD
     })
-    table.insert(alt_textures, "gayass_respack_" .. booster)
+    table.insert(alt_textures, "gayass_" .. booster)
 end
 
 -- Deck Skins
@@ -227,10 +227,6 @@ end
 TexturePack({
     key = "gayass",
     textures = alt_textures,
-    loc_txt = {
-        name = "Gayass Resource Pack",
-        text = { "jebs can you erm not" }
-    }
 })
 
 -- Music
