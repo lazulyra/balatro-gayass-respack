@@ -1,170 +1,263 @@
 -- AltTextures
 
+local data = {
+    jokers = {
+        bald = {
+            j_joker = { name = "Bald Joker", },
+            j_wee = { name = "Bald Wee Joker", },
+        },
+        queer = { j_crazy = { name = "Queer Joker", }, },
+        half_a_car = { j_half = { name = "Half a Car", }, },
+        loss = {
+            j_four_fingers = {
+                name = "Loss",
+                text = {
+                    "All {C:attention}Flushes{} and",
+                    "{C:attention}Gays{} can be",
+                    "made with {C:attention}4{} cards",
+                },
+            },
+        },
+        winter_soldier = {
+            j_mime = {
+                name = "Winter Soldier",
+                text = {
+                    "Retrigger all",
+                    "card {C:attention}held in",
+                    "{C:attention}hand{} abilities",
+                    " ",
+                    "{C:red}Armed and{}",
+                    "{C:red}Dangerous!{}",
+                },
+            },
+        },
+        farewell = { j_mystic_summit = { name = "Farewell", }, },
+        misinput = {
+            j_misprint = {
+                name = "MISINPUT",
+                text = {
+                    "",
+                    "YOU CALM DOWN"
+                },
+            },
+        },
+        golden_ridge = { j_dusk = { name = "Golden Ridge", }, },
+        crewmate = { j_space = { name = "Amogus", }, },
+        egg = { j_egg = nil, },
+        jeff = {
+            j_splash = {
+                name = "Jeff the Land Shark",
+                text = {
+                    "",
+                    "{C:blue}Yaoi yaoi!{}",
+                },
+            },
+        },
+        nubby = { j_hiker = { name = "Nubby", }, },
+        slenderman = { j_faceless = { name = "Slenderman", }, },
+        blue_card = { j_red_card = { name = "Blue Card", }, },
+        kevin = {
+            j_square = {
+                name = "Kevin",
+                text = {
+                    "Kevin gains {C:chips}+#2#{} Chips",
+                    "if played hand has",
+                    "exactly {C:attention}4{} cards",
+                    "{C:inactive}(Currently {C:chips}#1#{C:inactive} Chips)",
+                },
+            },
+        },
+        demo_dash = {
+            j_shortcut = {
+                name = "Demo Dash",
+                text = {
+                    "Allows {C:attention}Gays{} to be",
+                    "made with gaps of {C:attention}1 rank",
+                    "{C:inactive}(ex: {C:attention}10 8 6 5 3{C:inactive})",
+                },
+            },
+        },
+        selfie = { j_photograph = nil, },
+        present_for_lyla = { j_gift = { name = "present for lyla", }, },
+        baked_beans = { j_turtle_bean = { name = "Baked Beans", }, },
+        oshawott = { name = "Oshawott", },
+        jjjjjjjjj = { name = "Jjjjjjjjj", },
+        iron_golem = { j_ancient = { name = "Iron Golem", }, },
+        frowny = { j_smiley = { name = "Frowny", }, },
+        celeste_campfire = { j_campfire = nil, },
+        yippee = { j_throwback = { name = "Yippee" }, },
+        big_boner = { j_hanging_chad = { name = "Down the Lane", }, },
+        dimmadome = {
+            j_ring_master = {
+                name = "Dimmadome",
+                text = {
+                    "{C:attention}Joker{}, {C:tarot}Tarot{}, {C:planet}Planet{},",
+                    "and {C:spectral}Oomfie{} cards may",
+                    "appear multiple times",
+                },
+            },
+        },
+        aku_aku = { j_idol = { name = "Aku Aku", }, },
+        missing_texture = { j_invisible = { name = "MISSING TEXTURE", }, },
+    },
+    soul_jokers = {
+        chungus = { j_caino = { name = "Big Chungus", }, },
+    },
+    tarots = {
+        gambling = { c_wheel_of_fortune = { name = "Let's Go Gambling!" }, },
+        granny_headstone = { c_death = nil },
+        misdrop = { c_tower = { name = "The Misdrop" }, },
+    },
+    spectrals = {
+        panda = { c_familiar = { name = "Panda" }, },
+        ruri = { c_grim = { name = "Ruri" }, },
+        oversky = { c_incantation = { name = "OverSky" }, },
+        sarah = { c_talisman = { name = "Sarah" }, },
+        lyra = { c_aura = { name = "Lyra" }, },
+        ari = { c_wraith = { name = "Ari" }, },
+        mio = { c_sigil = { name = "Mio" }, },
+        luigi = { c_ouija = { name = "Luigi" }, },
+        estrogen = { c_ectoplasm = { name = "Estrogen" }, },
+        maddie = { c_immolate = { name = "Maddie" }, },
+        honk_shoo = { c_ankh = { name = "Honk Shoo" }, },
+        jess = { c_hex = { name = "Jess" }, },
+        nat = { c_trance = { name = "Nat" }, },
+        large = { c_medium = { name = "Large" }, },
+        chiara = { c_cryptid = { name = "Chiara" }, },
+        crystal_heart = { c_soul = { name = "Crystal Heart" }, },
+    },
+    planets = {
+        penis = { c_venus = { name = "Penis", }, },
+        anus = { c_uranus = { name = "Uranus", }, },
+    },
+    vouchers = {
+        mushroom = { v_paint_brush = { name = "Mushroom" }, },
+        mega_mushroom = { v_palette = { name = "Mega Mushroom" }, },
+    },
+    boosters = {
+        p_spectral_jumbo_1 = {
+            name = "Jumbo Oomfie Pack",
+            text = {
+                "Choose {C:attention}#1#{} of up to",
+                "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                "be used immediately",
+            },
+        },
+        p_spectral_mega_1 = {
+            name = "Mega Oomfie Pack",
+            text = {
+                "Choose {C:attention}#1#{} of up to",
+                "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                "be used immediately",
+            },
+        },
+        p_spectral_normal_1 = {
+            name = "Oomfie Pack",
+            text = {
+                "Choose {C:attention}#1#{} of up to",
+                "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                "be used immediately",
+            },
+        },
+        p_spectral_normal_2 = {
+            name = "Oomfie Pack",
+            text = {
+                "Choose {C:attention}#1#{} of up to",
+                "{C:attention}#2#{C:spectral} Oomfie{} cards to",
+                "be used immediately",
+            },
+        },
+    }
+}
+
 local alt_textures = {}
 
-local jokers = {
-    "j_joker",           -- 1
-    "j_half",            -- 16
-    "j_four_fingers",    -- 18
-    "j_mime",            -- 19
-    "j_mystic_summit",   -- 23
-    "j_misprint",        -- 27
-    "j_dusk",            -- 28
-    "j_space",           -- 45
-    "j_egg",             -- 46
-    "j_splash",          -- 52
-    "j_hiker",           -- 56
-    "j_faceless",        -- 57
-    "j_red_card",        -- 63
-    "j_square",          -- 65
-    "j_shortcut",        -- 69
-    "j_photograph",      -- 78
-    "j_gift",            -- 79
-    "j_turtle_bean",     -- 80
-    "j_trading",         -- 95
-    "j_flash",           -- 96
-    "j_ancient",         -- 99
-    "j_smiley",          -- 104
-    "j_campfire",        -- 105
-    "j_mr_bones",        -- 107
-    "j_sock_and_buskin", -- 109
-    "j_throwback",       -- 114
-    "j_hanging_chad",    -- 115
-    "j_ring_master",     -- 121
-    "j_idol",            -- 127
-    "j_invisible",       -- 137
-}
-
-for _, joker in ipairs(jokers) do
-    AltTexture({
-        key = joker,
-        set = "Joker",
-        path = "joker/" .. joker .. ".png",
-        keys = {
-            joker
-        },
-        localization = true,
-    })
-    table.insert(alt_textures, "gayass_" .. joker)
+for key, joker in pairs(data.jokers) do
+    for joker, loc in pairs(joker) do
+        AltTexture({
+            key = joker,
+            set = "Joker",
+            path = "joker/" .. key .. ".png",
+            keys = { joker },
+            -- localization = { [joker] = loc, },
+        })
+        table.insert(alt_textures, "gayass_" .. joker)
+    end
 end
 
-local legendary_jokers = {
-    "j_caino",
-}
-
-for _, joker in ipairs(legendary_jokers) do
-    AltTexture({
-        key = joker,
-        set = "Joker",
-        path = "legendary_joker/" .. joker .. ".png",
-        keys = {
-            joker,
-        },
-        soul_keys = {
-            joker,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. joker)
+for key, joker in pairs(data.soul_jokers) do
+    for joker, loc in pairs(joker) do
+        AltTexture({
+            key = joker,
+            set = "Joker",
+            path = "joker/" .. key .. ".png",
+            keys = { joker, },
+            soul_keys = { joker, },
+            -- localization = { [joker] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. joker)
+    end
 end
 
 -- Tarot
 
-local tarots = {
-    "c_wheel_of_fortune",
-    "c_death",
-    "c_tower",
-}
-
-for _, tarot in ipairs(tarots) do
-    AltTexture({
-        key = tarot,
-        set = "Tarot",
-        path = "tarot/" .. tarot .. ".png",
-        keys = {
-            tarot,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. tarot)
+for key, tarot in pairs(data.tarots) do
+    for tarot, loc in pairs(tarot) do
+        AltTexture({
+            key = tarot,
+            set = "Tarot",
+            path = "tarot/" .. key .. ".png",
+            keys = { tarot, },
+            -- localization = { [tarot] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. tarot)
+    end
 end
 
 -- Spectral
 
-local spectrals = {
-    "c_familiar",
-    "c_grim",
-    "c_incantation",
-    "c_talisman",
-    "c_aura",
-    "c_wraith",
-    "c_sigil",
-    "c_ouija",
-    "c_ectoplasm",
-    "c_immolate",
-    "c_ankh",
-    "c_hex",
-    "c_trance",
-    "c_medium",
-    "c_cryptid",
-    "c_soul",
-    "c_black_hole",
-}
-
-for _, spectral in ipairs(spectrals) do
-    AltTexture({
-        key = spectral,
-        set = "Spectral",
-        path = "spectral/" .. spectral .. ".png",
-        keys = {
-            spectral,
-        },
-        soul_keys = {
-            spectral,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. spectral)
+for key, spectral in pairs(data.spectrals) do
+    for spectral, loc in pairs(spectral) do
+        AltTexture({
+            key = spectral,
+            set = "Spectral",
+            path = "spectral/" .. key .. ".png",
+            keys = { spectral, },
+            soul_keys = { spectral, },
+            -- localization = { [spectral] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. spectral)
+    end
 end
 
 -- Planets
 
-local planets = {
-    "c_venus",
-    "c_uranus",
-}
-
-for _, planet in ipairs(planets) do
-    AltTexture({
-        key = planet,
-        set = "Planet",
-        path = "planet/" .. planet .. ".png",
-        keys = {
-            planet,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. planet)
+for key, planet in pairs(data.planets) do
+    for planet, loc in pairs(planet) do
+        AltTexture({
+            key = planet,
+            set = "Planet",
+            path = "planet/" .. key .. ".png",
+            keys = { planet, },
+            -- localization = { [planet] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. planet)
+    end
 end
 
 -- Vouchers
 
-local vouchers = {
-    "v_paint_brush",
-    "v_palette",
-}
-
-for _, voucher in ipairs(vouchers) do
-    AltTexture({
-        key = voucher,
-        set = "Voucher",
-        path = "voucher/" .. voucher .. ".png",
-        keys = {
-            voucher,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. voucher)
+for key, voucher in pairs(data.vouchers) do
+    for voucher, loc in pairs(voucher) do
+        AltTexture({
+            key = voucher,
+            set = "Voucher",
+            path = "voucher/" .. key .. ".png",
+            keys = { voucher, },
+            -- localization = { [voucher] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. voucher)
+    end
 end
 
 --[[ AltTexture({
@@ -179,24 +272,17 @@ end
 
 -- Booster Packs
 
-local boosters = {
-    "p_spectral_normal_1",
-    "p_spectral_normal_2",
-    "p_spectral_jumbo_1",
-    "p_spectral_mega_1",
-}
-
-for _, booster in ipairs(boosters) do
-    AltTexture({
-        key = booster,
-        set = "Booster",
-        path = "booster/" .. booster .. ".png",
-        keys = {
-            booster,
-        },
-        -- localization = true -- TBD
-    })
-    table.insert(alt_textures, "gayass_" .. booster)
+for key, booster in pairs(data.boosters) do
+    for booster, loc in pairs(booster) do
+        AltTexture({
+            key = booster,
+            set = "Booster",
+            path = "booster/" .. key .. ".png",
+            keys = { booster, },
+            -- localization = { [booster] = loc },
+        })
+        table.insert(alt_textures, "gayass_" .. booster)
+    end
 end
 
 -- Deck Skins
@@ -227,6 +313,7 @@ end
 TexturePack({
     key = "gayass",
     textures = alt_textures,
+    -- localization = true,
 })
 
 -- Music
